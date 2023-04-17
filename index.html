@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire D'inscription</title>
+</head>
+
+<body>
+
+    <form method="post" action="mail@mail.com">
+
+        <div class="form-inscr">
+            <label for="firstname">Prénom :</label>
+            <input type="text" name="firstname" id="firstname" minlength="2" maxlength="20" placeholder="Entre 2 et 20 caractères" required><br>
+
+            <label for="surname">Nom :</label>
+            <input type="text" name="surname" id="surname" minlength="2" maxlength="20" placeholder="Entre 2 et 20 caractères" required><br>
+        
+            <label for="age">Age :</label>
+            <input type="number" name="age" id="age" min="18" max="99" placeholder="18 à 99" required><br>
+
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Sexe :</legend>
+                
+                <label for="male">Masculin</label>
+                <input type="radio" name="sex" id="male" value="masculin" required>
+
+                <label for="female">Féminin</label>
+                <input type="radio" name="sex" id="female" value="feminin" required>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" name="email" id="email" placeholder="email@fournisseur.com" maxlength="30" required><br>
+        
+            <label for="adress">Adresse Postale</label>
+            <input type="text" name="adress" id="adress" placeholder="Numéro + Rue" required ><br>
+
+            <label for="cp">Code Postal :</label>
+            <input type="text" name="codepostal" id="cp" minlength="5" maxlength="5" placeholder="59000" required>
+        
+            <label for="town">Ville :</label>
+            <input type="text" name="town" id="town" minlength="3" maxlength="40" placeholder="Lille" required><br>
+
+            <label for="job">Métier</label>
+                <select name="job" id="job" required>
+                    <option value="">Selection Métier Exercé</option>
+                    <option value="demandeur_emploi">Demandeur d'emploi</option>
+                    <option value="ouvrier">Ouvrier</option>
+                    <option value="employe">Employé</option>
+                    <option value="fonctionpu">Fonction Publique</option>
+                    <option value="artisan">Artisan</option>
+                </select><br>
+
+            <label for="nationality">Nationalité</label>
+                <select name="nationality" id="nationality" required>
+                    <option value="">Selectioner Nationalité</option>
+                    <option value="france" selected>France</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="luxembourg">Luxembourg</option>
+                    <option value="allemagne">Allemagne</option>
+                    <option value="gb">Grande-Bretagne</option>
+                    <option value="other">Autre</option>
+                </select>
+            <input type="text" name="othernationality" id="othernationality" placeholder="Autre"><br>
+
+            <label for="birthdate">Date De Naissance</label>
+            <input type="date" name="birthdate" id="birthdate" min="1950-01-01" max="2010-01-01" required><br>
+
+            <label for="birthcountry">Pays De Naissance</label>
+                <select name="birthcountry" id="birthcountry" required>
+                    <option value="">Selectioner Pays</option>
+                    <option value="france" selected>France</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="luxembourg">Luxembourg</option>
+                    <option value="allemagne">Allemagne</option>
+                    <option value="gb">Grande-Bretagne</option>
+                    <option value="other">Autre</option>
+                </select>
+            <input type="text" name="birthcountry" id="birthcountryother" placeholder="Autre"><br>
+
+            <label for="socialsecurity">Numéro Sécurité Sociale :</label>
+            <input type="text" name="socialsecurity" id="socialsecurity" minlength="15" maxlength="15" placeholder="Numéro Sécurité Sociale" required><br>
+
+            <label for="numpassport">Numéro Passeport :</label>
+            <input type="text" name="numpassport" id="numpassport" minlength="9" maxlength="9" placeholder="Numéro Passeport" required><br>
+        
+            <label for="passportdate">Date De Délivrance Passeport</label>
+            <input type="date" name="passportdate" id="passportdate" min="1970-01-01" max="2023-12-31" required><br>
+        
+            <label for="passportvalidity">Date De Validité Passeport</label>
+            <input type="date" name="passportvalidity" id="passportvalidity" min="2000-01-01" max="2034-12-31" required><br>
+        
+            <label for="send"></label>
+            <input type="submit" name="send" id="send">
+
+        </div>
+
+    </form>
+    
+</body>
+
+</html>
